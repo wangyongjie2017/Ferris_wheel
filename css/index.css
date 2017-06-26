@@ -1,0 +1,86 @@
+body {
+    background: url(http://i2.muimg.com/588926/f55eff9bf27a1c46.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.box {
+    position: relative;
+    margin: 20px auto;
+    width: 600px;
+    height: 600px;
+    // border: 1px solid red;
+    background: url(http://i4.buimg.com/588926/7bddd828f0aba0f1.png) center center no-repeat;
+    background-size: 600px 600px;
+    animation: one 10s linear infinite;
+}
+
+img {
+    width: 100px;
+    height: 140px;
+    animation: two 10s linear infinite;
+}
+
+.box img:nth-child(1) {
+    position: absolute;
+    top: 350px;
+}
+
+.box img:nth-child(2) {
+    position: absolute;
+    top: 450px;
+    left: 145px;
+}
+
+.box img:nth-child(3) {
+    position: absolute;
+    top: 455px;
+    left: 325px;
+}
+
+.box img:nth-child(4) {
+    position: absolute;
+    top: 320px;
+    left: 460px;
+}
+
+.box img:nth-child(5) {
+    position: absolute;
+    top: 120px;
+    left: 480px;
+}
+
+.box img:nth-child(6) {
+    position: absolute;
+    top: -10px;
+    left: 335px;
+}
+
+.box img:nth-child(7) {
+    position: absolute;
+    top: -20px;
+    left: 155px;
+}
+
+.box img:nth-child(8) {
+    position: absolute;
+    top: 146px;
+    left: -10px;
+}
+
+@keyframes one {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes two {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
